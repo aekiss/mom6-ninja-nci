@@ -1,6 +1,6 @@
 #!/bin/bash
 
-srcdir=/scratch/$PROJECT/$USER/MOM6-examples/src
+srcdir=${MYGROUP}/MOM6-examples/src
 
 if [[ -z "$srcdir" ]]; then
     printf "Set your source directory in gen_build.sh!\n"
@@ -18,9 +18,9 @@ srcdir = ${srcdir}
 EOF
 
     cat << 'EOF' >> config.ninja
-fc = mpif90
-cc = mpicc
-ld = mpifort
+fc = ftn
+cc = cc
+ld = ftn
 ar = ar
 
 fflags = -fno-alias -auto -safe-cray-ptr -ftz -assume byterecl -i4 -r8 -nowarn -sox -g
