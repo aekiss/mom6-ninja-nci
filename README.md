@@ -1,12 +1,12 @@
 # Gadi build script
 
 This is a fork of [Angus' repository](https://github.com/angus-g/mom6-ninja-nci) with a 
-simple gadi specific build script.
+simple pawsey specific build script.
 
-To build ocean-only MOM6 on NCI:
+To build ocean-only MOM6 on magnus @ pawsey:
 
 ```bash
-cd /scratch/$PROJECT/$USER
+cd ${MYGROUP}
 git clone git@github.com:coecms/mom6-ninja-nci.git
 cd mom6-ninja-nci
 ./cms_build.sh
