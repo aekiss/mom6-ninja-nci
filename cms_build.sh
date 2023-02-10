@@ -14,7 +14,7 @@ echo "Download source code and build scripts"
 git clone --recursive https://github.com/NOAA-GFDL/MOM6-examples.git MOM6-examples
 
 echo "Configure build scripts"
-cd mom6-ninja-nci
+cd -
 ./gen_build.sh
 
 echo "Compile FMS library"
